@@ -4,9 +4,9 @@ function stringChop(str, size) {
 	let count = 0;
 	let s = "";
 	for(let i = 0; i < str.length; i++) {
-		count++;
 		if(count < 5) {
 			s += str[i];
+			count++;
 		} else {
 			count = 0;
 			ans.push(s);
@@ -20,6 +20,6 @@ function stringChop(str, size) {
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
+// alert(stringChop(str, size));
